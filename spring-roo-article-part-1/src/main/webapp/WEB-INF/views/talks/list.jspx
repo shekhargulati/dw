@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_dw_roo_conference_domain_Talk" items="${talks}" z="MRdu5j/UAyjchLbjr4SuIzg9x2Q=">
+        <table:table data="${talks}" id="l_com_dw_roo_conference_domain_Talk" path="/talks" z="4umqsCBNSonVJYonaZZp1pt/cyQ=">
+            <table:column id="c_com_dw_roo_conference_domain_Talk_title" property="title" z="iab9L5r15HD/7qsuZWKJx3z9UuI="/>
+            <table:column id="c_com_dw_roo_conference_domain_Talk_description" property="description" z="KP6haYZ3V2YzC02ms8ttHLMgMDU="/>
+            <table:column id="c_com_dw_roo_conference_domain_Talk_speaker" property="speaker" z="QaaPBtIVYkLkXYASAKkcDZwI6uU="/>
+        </table:table>
+    </page:list>
+</div>
