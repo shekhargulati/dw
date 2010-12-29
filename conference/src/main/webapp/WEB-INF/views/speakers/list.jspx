@@ -8,7 +8,8 @@
             <table:column id="c_com_dw_roo_conference_domain_Speaker_email" property="email" z="/NN9qJKldGuOyO+KrOZCiGU1RsI="/>
             <table:column id="c_com_dw_roo_conference_domain_Speaker_organization" property="organization" z="cQw3T7a5tffOmZ4K1sT+U3+4AJg="/>
             <table:column id="c_com_dw_roo_conference_domain_Speaker_birthdate" property="birthdate" z="5fG0hl4Ga5HpXxFik8zcsJWOXgA="/>
-            <table:column id="c_com_dw_roo_conference_domain_Speaker_age" property="age" z="N9v6S9NvRyb8ZHvWo1AKqQxf/Hk="/>
+            
+        <table:column id="c_com_dw_roo_conference_domain_Speaker_password" property="password" z="q/KUFhRomc0MX9T0TQy8lX2xfM0="/>
         </table:table>
     </page:list>
 </div>

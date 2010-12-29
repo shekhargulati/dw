@@ -35,6 +35,14 @@ privileged aspect Speaker_Roo_JavaBean {
         this.email = email;
     }
     
+    public String Speaker.getPassword() {
+        return this.password;
+    }
+    
+    public void Speaker.setPassword(String password) {
+        this.password = password;
+    }
+    
     public String Speaker.getOrganization() {
         return this.organization;
     }

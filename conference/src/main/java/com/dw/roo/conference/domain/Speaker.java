@@ -20,7 +20,7 @@ import javax.persistence.CascadeType;
 
 @RooJavaBean
 @RooToString
-@RooEntity
+@RooEntity(finders = { "findSpeakersByEmailAndPasswordEquals" })
 public class Speaker {
 
     @NotNull
@@ -32,6 +32,9 @@ public class Speaker {
     @NotNull
     @Column(unique = true)
     private String email;
+
+    @NotNull
+    private String password;
 
     private String organization;
 

@@ -98,6 +98,17 @@ privileged aspect SpeakerController_Roo_Controller {
         return "redirect:/speakers?page=" + ((page == null) ? "1" : page.toString()) + "&size=" + ((size == null) ? "10" : size.toString());
     }
     
+    @RequestMapping(params = { "find=ByEmailAndPasswordEquals", "form" }, method = RequestMethod.GET)
+    public String SpeakerController.findSpeakersByEmailAndPasswordEqualsForm(Model model) {
+        return "speakers/findSpeakersByEmailAndPasswordEquals";
+    }
+    
+    @RequestMapping(params = "find=ByEmailAndPasswordEquals", method = RequestMethod.GET)
+    public String SpeakerController.findSpeakersByEmailAndPasswordEquals(@RequestParam("email") String email, @RequestParam("password") String password, Model model) {
+        model.addAttribute("speakers", Speaker.findSpeakersByEmailAndPasswordEquals(email, password).getResultList());
+        return "speakers/list";
+    }
+    
     @ModelAttribute("talks")
     public Collection<Talk> SpeakerController.populateTalks() {
         return Talk.findAllTalks();

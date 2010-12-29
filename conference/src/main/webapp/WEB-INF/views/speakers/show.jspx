@@ -9,5 +9,6 @@
         <field:display date="true" dateTimePattern="${speaker_birthdate_date_format}" field="birthdate" id="s_com_dw_roo_conference_domain_Speaker_birthdate" object="${speaker}" z="eT+jNVGjX3XSV8FVQY+d+9mWBCw="/>
         <field:display field="age" id="s_com_dw_roo_conference_domain_Speaker_age" object="${speaker}" z="6K9z3pnVVdvhguqG4BcQJSV+oHw="/>
         <field:display field="talks" id="s_com_dw_roo_conference_domain_Speaker_talks" object="${speaker}" z="jnlBeNXMDeZkQLvX9W6rBTobYGQ="/>
+    <field:display field="password" id="s_com_dw_roo_conference_domain_Speaker_password" object="${speaker}" z="meP1Jfh8G7TVV316/gQNQcxsK98="/>
     </page:show>
 </div>

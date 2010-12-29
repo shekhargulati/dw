@@ -9,5 +9,6 @@
         <field:datetime dateTimePattern="${speaker_birthdate_date_format}" field="birthdate" id="c_com_dw_roo_conference_domain_Speaker_birthdate" past="true" required="true" z="QiqwaevU/NziWlCs9zIoYGZG3pk="/>
         <field:input field="age" id="c_com_dw_roo_conference_domain_Speaker_age" max="60" min="25" validationMessageCode="field_invalid_integer" z="SDc+MhFKT1vY+UuhkYB4lHVz5rY="/>
         <field:simple field="talks" id="c_com_dw_roo_conference_domain_Speaker_talks" messageCode="entity_reference_not_managed" messageCodeAttribute="Talk" z="tL90twUmhLlTIxs9n5U/0X+swLY="/>
+    <field:input field="password" id="c_com_dw_roo_conference_domain_Speaker_password" required="true" z="vh7mdjqh7mhxOgKjgkn8NeM+QOc="/>
     </form:update>
 </div>

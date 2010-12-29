@@ -14,6 +14,7 @@ privileged aspect Speaker_Roo_ToString {
         sb.append("Firstname: ").append(getFirstname()).append(", ");
         sb.append("Lastname: ").append(getLastname()).append(", ");
         sb.append("Email: ").append(getEmail()).append(", ");
+        sb.append("Password: ").append(getPassword()).append(", ");
         sb.append("Organization: ").append(getOrganization()).append(", ");
         sb.append("Birthdate: ").append(getBirthdate()).append(", ");
         sb.append("Age: ").append(getAge()).append(", ");

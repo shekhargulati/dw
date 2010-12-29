@@ -28,6 +28,7 @@ privileged aspect SpeakerDataOnDemand_Roo_DataOnDemand {
         obj.setFirstname("firstname_" + index);
         obj.setLastname("lastname_" + index);
         obj.setOrganization("organization_" + index);
+        obj.setPassword("password_" + index);
         return obj;
     }
     

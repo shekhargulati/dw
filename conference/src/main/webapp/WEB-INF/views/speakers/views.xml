@@ -13,4 +13,7 @@
 <definition extends="default" name="speakers/update">
         <put-attribute name="body" value="/WEB-INF/views/speakers/update.jspx"/>
     </definition>
+<definition extends="default" name="speakers/findSpeakersByEmailAndPasswordEquals">
+        <put-attribute name="body" value="/WEB-INF/views/speakers/findSpeakersByEmailAndPasswordEquals.jspx"/>
+    </definition>
 </tiles-definitions>
