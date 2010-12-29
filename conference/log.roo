@@ -1,4 +1,4 @@
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-06 03:25:11
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-29 22:25:14
 hint
 project --topLevelPackage com.dw.roo.conference --java 6 --projectName conference
 hint
@@ -16,26 +16,32 @@ field string --fieldName email --unique --notNull
 field string --fieldName organization 
 field date --fieldName birthdate --type java.util.Date --past --notNull 
 field number --type java.lang.Long --fieldName age --min 25 --max 60
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-06 03:29:04
 field string --fieldName title --class ~.domain.Talk --notNull 
 field string --fieldName description --notNull --sizeMax 4000
 field set --fieldName talks --element ~.domain.Talk --class ~.domain.Speaker --cardinality ONE_TO_MANY
 field reference --fieldName speaker --type ~.domain.Speaker --class ~.domain.Talk --notNull 
 hint
 controller all --package ~.web
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-06 03:44:04
 logging setup --level INFO --package ALL_SPRING 
 logging setup --level INFO --package ALL_SPRING
 q
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-06 03:50:53
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-06 04:01:01
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-06 04:03:38
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-29 22:26:55
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-29 22:27:11
 perform tests
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-29 22:27:11
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-29 22:27:12
 version
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-29 22:27:12
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-29 22:27:13
 q
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-06 04:23:31
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-06 05:15:57
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-29 21:19:20
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-29 21:52:47
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-29 22:02:56
-// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-29 22:02:58
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-29 22:27:13
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-29 22:27:13
+// script --file conference.roo
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-29 22:27:13
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-29 22:28:47
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-29 22:29:37
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-29 22:29:38
+selenium test --controller ~.web.SpeakerController
+selenium test --controller ~.web.TalkController 
+q
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-29 22:30:17

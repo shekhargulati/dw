@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_dw_roo_conference_domain_Talk" modelAttribute="talk" path="/talks" z="yHXTR7NXBw/3PGjNGFjuImkt/P8=">
+        <field:input field="title" id="c_com_dw_roo_conference_domain_Talk_title" required="true" z="zUW8WHQfb6K1QK7uc9jUNP4WiN4="/>
+        <field:textarea field="description" id="c_com_dw_roo_conference_domain_Talk_description" required="true" z="r06IXN8u+74AgS/jrPIGVZzxq60="/>
+        <field:select field="speaker" id="c_com_dw_roo_conference_domain_Talk_speaker" itemValue="id" items="${speakers}" path="/speakers" required="true" z="pf9nxu5Pnp9xsSG6+C7BCpNhp0Q="/>
+    </form:update>
+</div>
