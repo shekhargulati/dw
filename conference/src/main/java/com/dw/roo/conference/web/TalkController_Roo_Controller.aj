@@ -5,7 +5,6 @@ package com.dw.roo.conference.web;
 
 import com.dw.roo.conference.domain.Speaker;
 import com.dw.roo.conference.domain.Talk;
-import java.io.UnsupportedEncodingException;
 import java.lang.Long;
 import java.lang.String;
 import java.util.ArrayList;
@@ -24,23 +23,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.util.UriUtils;
-import org.springframework.web.util.WebUtils;
 
 privileged aspect TalkController_Roo_Controller {
     
     @Autowired
     private GenericConversionService TalkController.conversionService;
-    
-    @RequestMapping(method = RequestMethod.POST)
-    public String TalkController.create(@Valid Talk talk, BindingResult result, Model model, HttpServletRequest request) {
-        if (result.hasErrors()) {
-            model.addAttribute("talk", talk);
-            return "talks/create";
-        }
-        talk.persist();
-        return "redirect:/talks/" + encodeUrlPathSegment(talk.getId().toString(), request);
-    }
     
     @RequestMapping(params = "form", method = RequestMethod.GET)
     public String TalkController.createForm(Model model) {
@@ -122,18 +109,6 @@ privileged aspect TalkController_Roo_Controller {
     void TalkController.registerConverters() {
         conversionService.addConverter(getSpeakerConverter());
         conversionService.addConverter(getTalkConverter());
-    }
-    
-    private String TalkController.encodeUrlPathSegment(String pathSegment, HttpServletRequest request) {
-        String enc = request.getCharacterEncoding();
-        if (enc == null) {
-            enc = WebUtils.DEFAULT_CHARACTER_ENCODING;
-        }
-        try {
-            pathSegment = UriUtils.encodePathSegment(pathSegment, enc);
-        }
-        catch (UnsupportedEncodingException uee) {}
-        return pathSegment;
     }
     
 }
