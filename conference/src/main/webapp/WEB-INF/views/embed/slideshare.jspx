@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:embed="urn:jsptagdir:/WEB-INF/tags/embed" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <util:panel id="title" title="Slideshare">
+        <embed:document documentId="indicthreads-java10-spring-roo-and-the-cloud-101206151456-phpapp02" id="doc_indicthreads-java10-spring-roo-and-the-cloud-101206151456-phpapp02" provider="slideshare" z="e88fTV+q7YqaK1qsxu7Lv/7DJ6k="/>
+    </util:panel>
+</div>

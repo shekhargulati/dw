@@ -15,5 +15,9 @@
     <menu:category id="c_seleniumtests" z="PPLMd2yNB6/LSbjIWogAacRPU+Q=">
             <menu:item id="si_seleniumtests_test" messageCode="selenium_menu_test_suite" url="/resources/selenium/test-suite.xhtml" z="wwunW/IPDcunN97u41MvMJZQ2to="/>
         </menu:category>
+    <menu:category id="c_embedded" z="LRTVSLfH1//iHuBP77kc72qGGb8=">
+            <menu:item id="i_embedded__embedvimeo_id" messageCode="global_generic" url="/embed/vimeo" z="5uF9GHatKu4uJR0BX4eP+InZc54="/>
+        <menu:item id="i_embedded__embedslideshare_id" messageCode="global_generic" url="/embed/slideshare" z="qbc7xb+vjcysdlqlOIS6lXzV4XQ="/>
+        </menu:category>
     </menu:menu>
 </div>

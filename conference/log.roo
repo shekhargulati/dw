@@ -73,3 +73,8 @@ web mvc install language --code it
 web mvc install language --code sv
 q
 // Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-30 01:37:33
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-30 01:43:05
+web mvc embed video --provider VIMEO --videoId 16069687 
+web mvc embed document --provider SLIDESHARE --documentId indicthreads-java10-spring-roo-and-the-cloud-101206151456-phpapp02
+q
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-30 01:43:11
