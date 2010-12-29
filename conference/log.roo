@@ -66,3 +66,10 @@ q
 // Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-30 01:29:43
 q
 // Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-30 01:29:46
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log opened at 2010-12-30 01:36:51
+web mvc install language --code es 
+web mvc install language --code eit
+web mvc install language --code it
+web mvc install language --code sv
+q
+// Spring Roo 1.1.0.RELEASE [rev 793f2b0] log closed at 2010-12-30 01:37:33
