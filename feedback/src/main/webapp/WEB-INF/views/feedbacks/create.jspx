@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_dw_roo_feedback_domain_Feedback" modelAttribute="feedback" path="/feedbacks" render="${empty dependencies}" z="cdxLfP17TgsS2EFfbPEErPcCq0M=">
+        <field:input field="attendeeemail" id="c_com_dw_roo_feedback_domain_Feedback_attendeeemail" required="true" validationMessageCode="field_invalid_email" z="lzmldpFjdbDeWDcI686K8VsUDIQ="/>
+        <field:input field="talktitle" id="c_com_dw_roo_feedback_domain_Feedback_talktitle" required="true" z="gkHvr6mlVhd76uGdsN+joNMcMx8="/>
+        <field:input field="feedback" id="c_com_dw_roo_feedback_domain_Feedback_feedback" required="true" z="a6BqP1pMckdVZaF/Iwk672Qz9hE="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_dw_roo_feedback_domain_Feedback" render="${not empty dependencies}" z="Toj53SpVeqP7tdIDklB8jvxEJo8="/>
+</div>

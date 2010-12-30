@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_dw_roo_feedback_domain_Feedback" items="${feedbacks}" z="ll//rmuJnfZ+T54oj3gK/PdiItU=">
+        <table:table data="${feedbacks}" id="l_com_dw_roo_feedback_domain_Feedback" path="/feedbacks" z="7B7LsA9/VsZW1Jf+TzThLlobSDk=">
+            <table:column id="c_com_dw_roo_feedback_domain_Feedback_attendeeemail" property="attendeeemail" z="oURrQd5Kjvb076JvNFW3ZEYKYAM="/>
+            <table:column id="c_com_dw_roo_feedback_domain_Feedback_talktitle" property="talktitle" z="LrsW360Et6qRo2GynT0LdDyEkvE="/>
+            <table:column id="c_com_dw_roo_feedback_domain_Feedback_feedback" property="feedback" z="ZI8ndwN7K5BoxQxCbXguVZfdkmY="/>
+        </table:table>
+    </page:list>
+</div>

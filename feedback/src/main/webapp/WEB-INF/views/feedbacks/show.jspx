@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_dw_roo_feedback_domain_Feedback" object="${feedback}" path="/feedbacks" z="z98HDMgQny4mGgzAD4E25N/QFY4=">
+        <field:display field="attendeeemail" id="s_com_dw_roo_feedback_domain_Feedback_attendeeemail" object="${feedback}" z="oc5LCXaiJuEPcPKqh6+7i1VfUu4="/>
+        <field:display field="talktitle" id="s_com_dw_roo_feedback_domain_Feedback_talktitle" object="${feedback}" z="8ynAn+/6vVanVZ6B7cA3Jz11smY="/>
+        <field:display field="feedback" id="s_com_dw_roo_feedback_domain_Feedback_feedback" object="${feedback}" z="dXhvl50wDGD6ixURavo2YgyJma0="/>
+    </page:show>
+</div>
